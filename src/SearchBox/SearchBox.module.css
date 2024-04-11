@@ -1,0 +1,12 @@
+.p {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 30%;
+}
