@@ -7,14 +7,16 @@ export default function Contact({ contact: { id, name, number }, onDelete }) {
   return (
     <>
       <div className={css.div}>
-        <p>
-          <BiSolidUser />
-          Name: {name}
-        </p>
-        <p className={css.p}>
-          <BiSolidPhone />
-          Number: {number}
-        </p>
+        <div className={css.row}>
+          <p>
+            <BiSolidUser />
+            Name: {name}
+          </p>
+          <p className={css.p}>
+            <BiSolidPhone />
+            Number: {number}
+          </p>
+        </div>
 
         <button className={css.btn} onClick={() => onDelete(id)} type="submit">
           Delete
